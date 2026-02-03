@@ -14,6 +14,11 @@ body {
 .menu li {
   cursor: pointer;
 }
+.menu div ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
 
 .centro ul {
   list-style-type: none;
