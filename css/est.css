@@ -16,15 +16,22 @@ body{
 }
 
 .centro ul {
+    
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 20px;
 }
+.menu #A{
+    font-family: 'Dm Sans';
+    font-size: 30px;
+}
 
 .centro li {
+    font-family: 'Ag Link';
     font-size: 16px;
+    font-weight: bold;
 }
 
 #btn1 {
@@ -42,14 +49,52 @@ body{
 }
 
 .titulo h1 {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: 'Ag Display';
 }
+.centered #h1{
+        font-family: 'Ag Heading 1';
+        font-size: 60px;
+        margin: 10px;
+    }
+
+ .container {
+            position: relative;  /* IMPORTANTE: o pai precisa disso */
+            width: 100%;
+            height: 300px;
+            margin: 50px auto;
+            display: flex;                     /* Passo 1 */
+            justify-content: center;           /* Passo 2 (horizontal) */
+            align-items: center;
+            
+        }
+        
+        /* Div que fica atrás */
+        #div-atras {
+           width: 100%;
+           height: 70%;
+            background-color: #8E9C78;
+            border-radius: 10px;
+            bottom: 0;
+            position: absolute;
+        }
+        
+        /* Div que fica na frente */
+        #div-frente {
+            position: absolute;               
+            width: 1200px;
+            border-radius: 80px;
+            z-index: 2; 
+            
+            left: 30px;            
+        }
+        .container img{
+border-radius: 20px;
+        }
 
 .hero_img {
-    background-color: #8E9C78;
     border-radius: 15px;
-    width: 1330px;
-    height: 362px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,6 +182,14 @@ body{
     height: 40px;
 }
 
+.table th{
+    font-family: 'Ag Heading 1';
+}
+.table tr{
+    font-family: 'Ag Caption';
+}
+
+
 .item {
     display: flex;
     align-items: center;
@@ -152,7 +205,18 @@ body{
 #para{
     font-size: 30px;
 }
+.logo_cloud p{
+    font-family:'Ag Caption';
+}
+.benefict .texto #p1{
+    font-family:'Ag Caption';
+}
 
+.benefict .texto #p2{
+    font-family:'Ag Heading 1';
+    font-size: 50px;
+    margin: 0;
+}
 .map {
     display: flex;
     justify-content: space-between;
@@ -164,6 +228,29 @@ body{
     font-size: 30px;
 }
 
+.testimonial #para{
+    font-family: 'Ag Heading 2';
+}
+.name h3{
+    font-family: 'Ag paragraph';
+}
+.name p{
+    font-family: 'Ag Caption';
+}
+.map h2{
+    font-family: 'Ag Heading 1';
+    font-size: 40px;
+}
+.icons h1{
+    font-family: 'Ag Heading 1';
+    font-size: 40px;
+}
+.icons .icons_p {
+    font-family: 'Ag Heading 3';
+}
+.icons #p3{
+    font-family: 'Ag Paragraph';
+}
 .centered {
     display: flex;
     flex-direction: column;
@@ -171,8 +258,33 @@ body{
     align-items: center;
     text-align: center;
     height: 300px;
+    margin: 0;
+    
+}
+.t_icone{
+    font-family:'Ag Heading 3';
 }
 
+.pg{
+    font-family:'Ag Paragraph';
+}
+.title #p2{
+    font-family:'Ag Heading 1';
+}
+.title .pg{
+    font-family:'Ag Paragraph';
+}
+.list li{
+    font-family:'Ag Paragraph';
+}
+.content h2{
+    font-family:'Ag Paragraph';
+}
+
+.centered p{
+    font-family:'Ag Paragraph';
+    margin: 40px;
+}
 #learn{
     width: 300px;
     height: 40px;
@@ -455,6 +567,7 @@ body{
         text-align: center;
     }
     
+    
     #learn {
         width: 100%;
         max-width: 300px;
@@ -542,7 +655,7 @@ body{
     }
     
     .titulo h1 {
-        font-size: 50px !important;
+        font-size: 80px !important;
     }
     
     #para {
@@ -591,6 +704,8 @@ main > div, main > section {
 }
 
 .menu li, button, .discover, #btn1, #learn, #btn1-mobile {
+    font-family: 'Ag Link';
+    
     transition: all 0.3s ease;
 }
 
