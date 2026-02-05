@@ -1,5 +1,7 @@
 body {
   background-color: #ffffff;
+  font-family: sans-serif;
+  
 }
 
 .menu {
@@ -9,6 +11,10 @@ body {
   align-items: center;
   padding: 10px;
   color: black;
+}
+.spci-p{
+  width: 700px;
+  height: 42px;
 }
 
 .menu li {
@@ -28,12 +34,12 @@ body {
   gap: 20px;
 }
 .menu #A {
-  font-family: "Dm Sans";
+  font-family: "Dm Sans",sans-serif;
   font-size: 30px;
 }
 
 .centro li {
-  font-family: "Ag Link";
+  font-family: "Ag Link",sans-serif;
   font-size: 16px;
   font-weight: bold;
 }
@@ -43,8 +49,16 @@ body {
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+#btn1 img{
+  width: 9px;
+  height: 9px;
 }
 
 .titulo {
@@ -54,21 +68,26 @@ body {
 
 .titulo h1 {
   font-size: 80px;
-  font-family: "Ag Display";
+  font-family: "Ag Display",sans-serif;
 }
 .centered #h1 {
-  font-family: "Ag Heading 1";
+  font-family: "Ag Heading 1",sans-serif;
   font-size: 60px;
   margin: 10px;
 }
-
+.qoute{
+  width: 450px;
+  height: 270px;
+  margin: 0;
+  left: -10px;
+}
 .container {
-  position: relative; /* IMPORTANTE: o pai precisa disso */
+  position: relative; 
   width: 100%;
   height: 600px;
   margin: 50px auto;
-  display: flex; /* Passo 1 */
-  justify-content: center; /* Passo 2 (horizontal) */
+  display: flex; 
+  justify-content: center; 
   align-items: center;
 }
 
@@ -144,6 +163,7 @@ body {
 
 .pg {
   color: #6f6f6f;
+  font-family: "Ag Paragraph",sans-serif;
 }
 
 #img_hero {
@@ -151,19 +171,37 @@ body {
   background-size: cover;
   width: 1200px;
 }
+.features_car{
+width: 590;
+  height: 711px;
+}
 
 .features_carrossel,
 .testimonial {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  gap: 10px;
+  padding-bottom: 50px;
+  
 }
 
+.list ol{
+  margin: 0;
+  padding: 0;
+}
 .list ol li {
-  border-top: 1px solid #ccc;
-  padding: 10px;
+  border-top: 1px solid #f1f1f1;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  
+}
+.l-p1{
+  color: #6f6f6f;
+  font-weight: bold;
+  font-family: "Ag Paragraph",sans-serif;
+  font-size: 20px;
+  margin-top: 13px;
 }
 
 .discover {
@@ -192,10 +230,10 @@ td {
 }
 
 .table th {
-  font-family: "Ag Heading 1";
+  font-family: "Ag Heading 1",sans-serif;
 }
 .table tr {
-  font-family: "Ag Caption";
+  font-family: "Ag Caption",sans-serif;
 }
 
 .item {
@@ -214,14 +252,17 @@ td {
   font-size: 30px;
 }
 .logo_cloud p {
-  font-family: "Ag Caption";
+  font-family: "Ag Caption",sans-serif;
 }
 .benefict .texto #p1 {
-  font-family: "Ag Caption";
+  font-family: "Ag Caption",sans-serif;
 }
-
+.features_carrossel .texto{
+  height: 642px;
+  width: 590px;
+}
 .benefict .texto #p2 {
-  font-family: "Ag Heading 1";
+  font-family: "Ag Heading 1",sans-serif;
   font-size: 50px;
   margin: 0;
 }
@@ -237,28 +278,42 @@ td {
 }
 
 .testimonial #para {
-  font-family: "Ag Heading 2";
+  font-family: "Ag Heading 2",sans-serif;
+  
 }
 .name h3 {
-  font-family: "Ag paragraph";
+  font-family: "Ag paragraph",sans-serif;
 }
 .name p {
-  font-family: "Ag Caption";
+  font-family: "Ag Caption",sans-serif;
 }
 .map h2 {
-  font-family: "Ag Heading 1";
+  font-family: "Ag Heading 1",sans-serif;
   font-size: 40px;
 }
 .icons h1 {
-  font-family: "Ag Heading 1";
+  font-family: "Ag Heading 1",sans-serif;
   font-size: 40px;
 }
 .icons .icons_p {
-  font-family: "Ag Heading 3";
+  font-family: "Ag Heading 3",sans-serif;
 }
 .icons #p3 {
-  font-family: "Ag Paragraph";
+  font-family: "Ag Display Statistics",sans-serif;
+  font-size: 60px;
+  margin: 0;
 }
+.icons hr, .how_work hr, .centered hr{
+  height: 1px; 
+    border: none; 
+    background-color: #f5f0f0; 
+  }
+  .specifications hr{
+     height: 1px; 
+    border: none; 
+    background-color: #f5f0f0; 
+  }
+
 .centered {
   display: flex;
   flex-direction: column;
@@ -269,31 +324,32 @@ td {
   margin: 0;
 }
 .t_icone {
-  font-family: "Ag Heading 3";
+  font-family: "Ag Heading 3",sans-serif;
 }
 
-.pg {
-  font-family: "Ag Paragraph";
-}
+
 .title #p2 {
-  font-family: "Ag Heading 1";
+  font-family: "Ag Heading 1",sans-serif;
 }
 .title .pg {
-  font-family: "Ag Paragraph";
+  font-family: "Ag Paragraph",sans-serif;
 }
 .list li {
-  font-family: "Ag Paragraph";
+  font-family: "Ag Paragraph",sans-serif;
 }
 .content h2 {
-  font-family: "Ag Paragraph";
+  font-family: "Ag Paragraph",sans-serif;
 }
 
 .centered p {
-  font-family: "Ag Paragraph";
+  font-family: "Ag Paragraph",sans-serif;
   margin: 40px;
 }
+.centered div { 
+    width: 650px;
+  }
 #learn {
-  width: 300px;
+  width: 550px;
   height: 40px;
   background-color: #485c11;
   color: #ffffff;
@@ -301,7 +357,15 @@ td {
   font-size: 20px;
   border: none;
   cursor: pointer;
+  display: flex;
+    justify-content: center;   
+    align-items: center;       
+    gap: 8px; 
 }
+#learn img {
+    width: 10px;
+    height: 10px;
+  }
 
 .footer nav ul {
   list-style: none;
@@ -322,7 +386,7 @@ td {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   margin-bottom: -15px;
 }
 
@@ -330,14 +394,14 @@ td {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 10px 20px;
+  gap: 30px;
 }
 
 #fundo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+  
 }
 
 #all {
@@ -551,11 +615,11 @@ td {
   .features_carrossel,
   .testimonial {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     padding: 20px 0;
   }
 
-  .features_car img,
+
   .testimonial img {
     width: 100%;
     height: auto;
@@ -597,7 +661,9 @@ td {
     height: auto;
     padding: 40px 20px;
     text-align: center;
+    
   }
+  
 
   #learn {
     width: 100%;
@@ -608,6 +674,7 @@ td {
   }
 
   footer {
+    margin: 60px;
     padding: 30px 20px;
   }
 
@@ -696,8 +763,8 @@ td {
 
   .features_carrossel,
   .testimonial {
-    gap: 40px;
-    padding: 0 20px;
+    gap: 20px;
+    padding: 0 10px;
   }
 
   .table table {
@@ -766,7 +833,7 @@ button,
 #btn1,
 #learn,
 #btn1-mobile {
-  font-family: "Ag Link";
+  font-family: "Ag Link",sans-serif;
 
   transition: all 0.3s ease;
 }
@@ -889,9 +956,7 @@ button,
     min-width: 300px;
     max-width: 300px;
     padding: 25px 20px;
-    background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     height: auto;
     text-align: left;
   }
@@ -950,9 +1015,7 @@ button,
     min-width: auto;
     max-width: none;
     padding: 20px;
-    background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     text-align: left;
   }
 
@@ -992,9 +1055,7 @@ button,
     min-width: auto;
     max-width: none;
     padding: 30px 25px;
-    background: white;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: left;
   }
