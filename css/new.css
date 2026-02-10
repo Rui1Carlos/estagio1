@@ -12,6 +12,8 @@ body {
   color: black;
 }
 
+
+
 .spci-p {
   
   height: 42px;
@@ -622,7 +624,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 799px) {
   main {
     padding: 0 15px;
   }
@@ -769,6 +771,15 @@ border-radius: 5px;
   .centered div p {
     font-size: 20px;
   }
+  #img-1{
+    display: none;
+  }
+  #img-2{
+    height: auto;
+    display: block;
+    
+  }
+ 
   .centered {
     height: auto;
     padding: 40px 20px;
