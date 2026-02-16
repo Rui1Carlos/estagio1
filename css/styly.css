@@ -202,9 +202,11 @@ body {
 .icons {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  
+  
+  align-items: center;
   padding: 10px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .pg {
@@ -222,8 +224,8 @@ body {
 }
 
 .icons section {
-  height: auto; 
-  flex: 1 1 250px;
+  height: 200px; 
+  
 }
 
 .features_carrossel,
@@ -235,7 +237,14 @@ body {
   column-gap: 50px;
   
 }
+.features_carrossel{
+  border-top: 1px solid #f3f3f39c;
 
+}
+.specifications{
+  padding-top: 70px;
+}
+.content
 .list ol {
   margin: 0;
   padding: 0;
@@ -246,6 +255,8 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
+  height: 60px;
+  padding-top: 15px;
 }
 
 .l-p1 {
@@ -253,7 +264,7 @@ body {
   font-weight: bold;
   font-family: "Ag Paragraph", sans-serif;
   font-size: 20px;
-  margin-top: 13px;
+ /* margin-top: 13px;*/
 }
 
 .discover {
@@ -272,6 +283,13 @@ body {
   text-align: center;
   padding: 20px;
   border: 1px solid #ffffff;
+}
+
+.content div{
+  padding: 40px;
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .table th,
@@ -409,7 +427,7 @@ td {
 
 .icons h1 {
   font-family: "Ag Heading 1", sans-serif;
-  font-size: clamp(30px, 5vw, 40px);
+  font-size: 40px;
 }
 
 .icons .icons_p {
@@ -418,7 +436,7 @@ td {
 
 .icons #p3 {
   font-family: "Ag Display Statistics", sans-serif;
-  font-size: clamp(40px, 6vw, 60px);
+  font-size: 60px;
   margin: 0;
 }
 
@@ -579,6 +597,13 @@ footer {
     padding: 15px 20px;
     position: relative;
   }
+  .content div {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
   #all {
     margin-bottom: 18px;
 }
@@ -591,7 +616,7 @@ footer {
   }
 
   .content .discover {
-    margin: 40px;
+    margin: 0;
   }
 
   .centro {
@@ -717,10 +742,17 @@ footer {
   .qoute #para {
     font-size: 20px;
   }
+  .icons {
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    gap: 20px;
+  }
 
   .icons section {
     flex: 0 0 100%;
     max-width: 100%;
+    text-align: start;
+    padding: 20px;
   }
 
   .features_carrossel,
@@ -822,6 +854,7 @@ footer {
     width: 100%;
     
   }
+  
 
   .how_work .icons::-webkit-scrollbar {
     height: 6px;
@@ -869,27 +902,66 @@ footer {
 /* Tablet (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
-    margin: 0 30px;
+    margin: 0 20px;
   }
-
-  .container {
-    aspect-ratio: 16 / 9;
+  .menu{
+    max-width: 95%;
+  }
+  
+  .icons{
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    gap: 20px;
+  }
+  .logo_cloud{
+    max-width: 95%;
+  }
+  .logo_row{
+          
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+  }
+  
+  .benefict{
+            max-width: 95%;
+  }
+   #div-atras {
+    width: 94%;
+    height: 70%;
+    background-color: #8e9c78;
+    border-radius: 10px;
+    bottom: 0;
+    position: absolute;
   }
 
   #div-frente {
+     position: absolute;
+    width: 85%;
+    height: 100%;
+    border-radius: 40px;
+    z-index: 2;
+    bottom: -40px;
+    left: 60px;
+
     bottom: -5%;
-    left: 7.5%;
+    left: 4%;
   }
 
   .hero_img {
     max-width: 95%;
+    margin: 0 auto;
+    height: auto;
+    min-height: 300px;
   }
 
   .hero_img img {
+    height: auto;
     max-height: 400px;
   }
 
   #img_hero {
+    margin: 0 auto;
     max-width: 95%;
   }
 
@@ -909,7 +981,9 @@ footer {
   #para {
     font-size: 24px !;
   }
-
+  .how_work{
+            max-width: 95%;
+  }
   .how_work .icons {
     display: flex;
     flex-wrap: wrap;
@@ -940,7 +1014,7 @@ footer {
   .menu,
   main,
   footer {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -1028,6 +1102,7 @@ button,
   .menu li:hover {
     color: #485c11;
   }
+  
 
   #btn1:hover,
   #btn1-mobile:hover,
@@ -1057,11 +1132,12 @@ button,
 .how_work .icons {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   padding: 10px;
   gap: 10px;
   overflow-x: visible;
 }
+
 
 .how_work .icons section {
   display: flex;
