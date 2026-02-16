@@ -275,7 +275,9 @@ body {
   border-radius: 50px;
   height: 50px;
   cursor: pointer;
+  font-size: 18px;
   transition: all 0.3s ease;
+  width: 300px;
 }
 
 .content {
@@ -291,6 +293,8 @@ body {
   display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .table th,
@@ -602,6 +606,7 @@ footer {
     
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
   }
 
